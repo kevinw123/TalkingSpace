@@ -17,7 +17,7 @@ class Database {
 				PDO::ATTR_PERSISTENT => true,
 				PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION 
 		);
-		// Create a new PDO instanace
+		// Create a new PDO instance
 		try {
 			$this->dbh = new PDO ($dsn, $this->user, $this->pass, $options);
 		}		// Catch any errors
